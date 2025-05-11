@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from model.creature import Creature
 from service.creature import service as creature_service
 
-router = APIRouter(prefix="/creature")
+router = APIRouter(prefix="/creature", tags=["creature"])
 
 @router.get("/")
 def get_all():

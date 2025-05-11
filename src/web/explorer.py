@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from model.explorer import Explorer
 from service.exporer import service as explorer_service
 
-router = APIRouter(prefix="/explorer")
+router = APIRouter(prefix="/explorer", tags=["explorer"])
 
 @router.get("/")
 def get_all():
